@@ -90,7 +90,7 @@ in
                     }
                     # Set background image
                     {
-                        command = "feh --bg-fill ~/dotfiles/general/images/wallpaper/wallpaper.jpg";
+                        command = "feh --bg-fill ~/nixHM-dotfiles/general/images/wallpaper/wallpaper.jpg";
                         always = true;
                         notification = false;
                     }
