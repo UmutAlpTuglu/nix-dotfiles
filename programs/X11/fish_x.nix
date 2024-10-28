@@ -13,6 +13,7 @@
 
         interactiveShellInit = ''
             set -g fish_greeting
+            set -gx EDITOR nvim
             # Start SSH agent if it's not running
             if not set -q SSH_AUTH_SOCK
                 eval (ssh-agent -c)
