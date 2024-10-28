@@ -73,6 +73,14 @@
         nixgl.nixGLIntel
     ];
     
+    # workaround for the moment with ssh config sop setup
+    home.activation = {
+        removeConflictingFiles = lib.hm.dag.entryBefore ["checkLinkTargets"] ''
+            rm -f ~/.ssh/config
+        '';
+    };
+
+    
     
     imports = [
         ./private-config.nix
