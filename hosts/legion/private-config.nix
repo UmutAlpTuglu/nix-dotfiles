@@ -12,6 +12,7 @@
             "ssh_github_identity" = {};
             "ssh_hetzner_host" = {};
             "ssh_hetzner_identity" = {};
+            "ssh_hetzner_user" = {};
             "git_username" = {};
             "git_email" = {};
         };
@@ -44,6 +45,7 @@
             Host hetzner
                 Hostname $(cat ${config.sops.secrets.ssh_hetzner_host.path})
                 IdentityFile $(cat ${config.sops.secrets.ssh_hetzner_identity.path})
+                User $(cat ${config.sops.secrets.ssh_hetzner_user.path})
             EOF
 
             # Move the temporary file into place

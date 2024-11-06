@@ -64,6 +64,7 @@
         xfce.thunar
         brightnessctl
         vscode
+        teams-for-linux
 
         imagemagick
 
